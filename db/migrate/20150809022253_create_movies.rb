@@ -9,5 +9,11 @@ class CreateMovies < ActiveRecord::Migration
       # of when movies are added or modified:
       t.timestamps
     end
+    create_table :users do |p|
+      p.string :user_id
+      p.string :email
+      p.string :session_token
+      p.timestamps
+    end
   end
 end
